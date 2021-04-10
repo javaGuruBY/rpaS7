@@ -38,6 +38,15 @@ public class MathOperationsDemo {
         System.out.println("account Balance: " + accountBalance);
         System.out.println("march salary: " + monthMarchSalary);
         accountBalance = accountBalance + monthMarchSalary;
-        System.out.println("march salary: " + accountBalance);
+        System.out.println("account Balance after march salary: " + accountBalance);
+
+
+        int secondsInMinutes = 60;
+        int minutesInHour = 60;
+        int hourInDay = 24;
+        int daysInMarch = 30;
+        int secondsInMarch = secondsInMinutes * minutesInHour * hourInDay * daysInMarch;
+        System.out.println("seconds in march: " + secondsInMarch);
+
     }
 }
