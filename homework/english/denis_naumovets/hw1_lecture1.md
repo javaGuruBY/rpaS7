@@ -7,8 +7,7 @@
 3. She doesn't like cooking, but today she is baking a pie.
 4. I am finishing the project right now.
 5. I don’t listen to rock music very often.
-6. — What does your sister do?
-— She is a programmer.
+6. — What does your sister do? — She is a programmer.
 7. My train leaves at 5 (всегда отправляется). Но можно в зависимости от контекста: My train is leaving at 5 (прямо сейчас отправляется в 5).
 8. He is never tidying up his room!!! (irritation)
 
@@ -18,9 +17,8 @@
 2. Listen! Somebody is singing.
 3. Look! The sun is shining.
 4. He does not use his car every day.
-5. — Where do you come from?
-— I am from Canada.
-6 What happened? Why are you crying?
+5. — Where do you come from? — I am from Canada.
+6. What happened? Why are you crying?
 7. She is always saying such silly things!!! 
 8. I am not going to work on Monday. I'm sick. 
 
