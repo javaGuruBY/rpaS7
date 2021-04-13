@@ -1,7 +1,6 @@
-package by.jrr.start;
+package io.github.naruhin;
 
 public class Application {
-
     public static void main(String[] args) {
         System.out.println("Hello World");
     }
