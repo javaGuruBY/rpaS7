@@ -33,7 +33,7 @@
 
 3 Please turn off the laptop, you don't using it.
 
-4. I am Like tea, but today, I do not drinking it.
+4. I don't like tea, but today, I am drinking it
 
 5. It's dark in your room. Are you sleeping?
 
