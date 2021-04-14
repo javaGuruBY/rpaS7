@@ -35,3 +35,16 @@ SECTION 1. GRAMMAR PRACTICE
 5 It's dark in your room. Are you sleeping?
 6. She came to London to study English. But she isn't living in a student residence, she's staying at her aunt's. 
 
+SECTION 2. SPEAKING PRACTICE
+
+1.1  Answer the questions. Introduce yourself
+
+1 What's your name? - My Name is Olga.
+2 Where do you live? - I live in Gomel.
+3 What do you do? - I am not working now.
+4 What do you like doing in your free time? - Wen I have free time I like reading, hearing music.
+5 Why would you like to be a programmer? - 
+6 What are you working on in the programming course at the moment? - At the moment I am making my homework by English.  
+7 Did you learn English before? - I have been starting to learn English by myself some monfs ego.
+8 Would you like to boost your English? - Yes,  
+9 What is the hardest thing about learning English? - 
