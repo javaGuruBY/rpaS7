@@ -29,7 +29,7 @@
 3. Please turn off the laptop, you aren’t using it.
 4. I don’t like tea, but today, I am drinking it.
 5. It's dark in your room. Are you sleeping?
-6. She came to London to study English. But she isn’t leaving in a student residence, she's staying at her aunt's. 
+6. She came to London to study English. But she isn’t living in a student residence, she's staying at her aunt's. (my bad) 
 
 # SECTION 2. SPEAKING PRACTICE
 
