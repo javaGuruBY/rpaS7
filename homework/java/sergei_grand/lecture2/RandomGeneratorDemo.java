@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class RandomGeneratorDemo {
     public static void main(String[] args) {
-        int sum = 0, count = 2;
+        int sum = 0;
+        int count = 2;
 
         for (int i = 1; i <= count; i++) {
             int randomNumber = new Random().nextInt();
