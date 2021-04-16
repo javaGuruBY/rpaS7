@@ -1,0 +1,125 @@
+ê
+java.lang.ObjectJ
+equals(Ljava/lang/Object;),java.lang.Object#equals(Ljava/lang/Object;)Z*
+
+finalize()java.lang.Object#finalize()V&
+notify()java.lang.Object#notify()V&
+<init>()java.lang.Object#<init>()V;
+
+toString()-java.lang.Object#toString()Ljava/lang/String;$
+wait(J)java.lang.Object#wait(J)V&
+wait(JI)java.lang.Object#wait(JI)V:
+
+getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
+clone()*java.lang.Object#clone()Ljava/lang/Object;8
+registerNatives()#java.lang.Object#registerNatives()V,
+notifyAll()java.lang.Object#notifyAll()V"
+wait()java.lang.Object#wait()V*
+
+hashCode()java.lang.Object#hashCode()I∆
+(io.github.grandckay.syntax.calc.Divisionjava.lang.ObjectB
+
+<init>(II)4io.github.grandckay.syntax.calc.Division#<init>(II)VD
+calculate()5io.github.grandckay.syntax.calc.Division#calculate()Dö
+io.github.grandckay.syntax.Dogjava.lang.Object4
+<init>()(io.github.grandckay.syntax.Dog#<init>()V0
+bark()&io.github.grandckay.syntax.Dog#bark()V(
+java.lang.Appendablejava.lang.Object+
+java.lang.AutoCloseablejava.lang.Object>
+java.io.Closeablejava.lang.Objectjava.lang.AutoCloseable%
+java.io.Flushablejava.lang.ObjectÉ
+java.io.OutputStreamjava.io.Closeablejava.lang.Objectjava.io.FlushableS
+nullOutputStream()=java.io.OutputStream#nullOutputStream()Ljava/io/OutputStream;,
+	write([B)java.io.OutputStream#write([B)V*
+<init>()java.io.OutputStream#<init>()V(
+flush()java.io.OutputStream#flush()V0
+write([BII)!java.io.OutputStream#write([BII)V(
+close()java.io.OutputStream#close()Vé
+java.io.FilterOutputStreamjava.io.OutputStream2
+	write([B)%java.io.FilterOutputStream#write([B)V\
+<init>(Ljava/io/OutputStream;):java.io.FilterOutputStream#<init>(Ljava/io/OutputStream;)V.
+flush()#java.io.FilterOutputStream#flush()V0
+write(I)$java.io.FilterOutputStream#write(I)V6
+write([BII)'java.io.FilterOutputStream#write([BII)V.
+close()#java.io.FilterOutputStream#close()VÖ 
+java.io.PrintStreamjava.lang.Appendablejava.io.Closeablejava.io.FilterOutputStream+
+	write([C)java.io.PrintStream#write([C)V)
+print(J)java.io.PrintStream#print(J)V-
+
+println(J)java.io.PrintStream#println(J)V)
+print(F)java.io.PrintStream#print(F)V-
+
+println(F)java.io.PrintStream#println(F)V/
+write([BII) java.io.PrintStream#write([BII)VÅ
+4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Ijava.io.PrintStream#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)V)
+print(Z)java.io.PrintStream#print(Z)V1
+clearError()!java.io.PrintStream#clearError()V-
+
+println(Z)java.io.PrintStream#println(Z)Vi
+(<init>(Ljava/io/File;Ljava/lang/String;)=java.io.PrintStream#<init>(Ljava/io/File;Ljava/lang/String;)V)
+write(I)java.io.PrintStream#write(I)VO
+println(Ljava/lang/Object;)0java.io.PrintStream#println(Ljava/lang/Object;)VK
+print(Ljava/lang/String;).java.io.PrintStream#print(Ljava/lang/String;)Ví
+4requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Zjava.io.PrintStream#requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;)
+print(I)java.io.PrintStream#print(I)V-
+
+println(I)java.io.PrintStream#println(I)V'
+flush()java.io.PrintStream#flush()V´
+?format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;m
+ append(Ljava/lang/CharSequence;)Ijava.io.PrintStream#append(Ljava/lang/CharSequence;)Ljava/io/PrintStream;l
+toCharset(Ljava/lang/String;)Kjava.io.PrintStream#toCharset(Ljava/lang/String;)Ljava/nio/charset/Charset;W
+<init>(ZLjava/io/OutputStream;)4java.io.PrintStream#<init>(ZLjava/io/OutputStream;)V+
+	print([C)java.io.PrintStream#print([C)Vq
+"append(Ljava/lang/CharSequence;II)Kjava.io.PrintStream#append(Ljava/lang/CharSequence;II)Ljava/io/PrintStream;)
+print(D)java.io.PrintStream#print(D)Vq
+,<init>(Ljava/lang/String;Ljava/lang/String;)Ajava.io.PrintStream#<init>(Ljava/lang/String;Ljava/lang/String;)V-
+
+println(D)java.io.PrintStream#println(D)VO
+println(Ljava/lang/String;)0java.io.PrintStream#println(Ljava/lang/String;)VW
+<init>(Ljava/io/OutputStream;Z)4java.io.PrintStream#<init>(Ljava/io/OutputStream;Z)VE
+<init>(Ljava/io/File;)+java.io.PrintStream#<init>(Ljava/io/File;)Vy
+0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Ejava.io.PrintStream#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)V1
+ensureOpen()!java.io.PrintStream#ensureOpen()Vã
+9<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)Njava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)V´
+?printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;-
+
+setError()java.io.PrintStream#setError()Vá
+-printf(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#printf(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;?
+	append(C)2java.io.PrintStream#append(C)Ljava/io/PrintStream;M
+<init>(Ljava/lang/String;)/java.io.PrintStream#<init>(Ljava/lang/String;)Vá
+-format(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;+
+	newLine()java.io.PrintStream#newLine()V)
+print(C)java.io.PrintStream#print(C)V1
+checkError()!java.io.PrintStream#checkError()Z+
+	println()java.io.PrintStream#println()V'
+close()java.io.PrintStream#close()V-
+
+println(C)java.io.PrintStream#println(C)VK
+write(Ljava/lang/String;).java.io.PrintStream#write(Ljava/lang/String;)VK
+print(Ljava/lang/Object;).java.io.PrintStream#print(Ljava/lang/Object;)V{
+1<init>(Ljava/io/OutputStream;ZLjava/lang/String;)Fjava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/lang/String;)VU
+<init>(Ljava/io/OutputStream;)3java.io.PrintStream#<init>(Ljava/io/OutputStream;)V/
+println([C) java.io.PrintStream#println([C)Vã
+9<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Njava.io.PrintStream#<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)V∆
+(io.github.grandckay.syntax.calc.Additionjava.lang.ObjectB
+
+<init>(II)4io.github.grandckay.syntax.calc.Addition#<init>(II)VD
+calculate()5io.github.grandckay.syntax.calc.Addition#calculate()Iÿ
+.io.github.grandckay.syntax.calc.Multiplicationjava.lang.ObjectH
+
+<init>(II):io.github.grandckay.syntax.calc.Multiplication#<init>(II)VJ
+calculate();io.github.grandckay.syntax.calc.Multiplication#calculate()Iœ
++io.github.grandckay.syntax.calc.Subtractionjava.lang.ObjectE
+
+<init>(II)7io.github.grandckay.syntax.calc.Subtraction#<init>(II)VG
+calculate()8io.github.grandckay.syntax.calc.Subtraction#calculate()I¿
+io.github.grandckay.syntax.Appjava.lang.Object4
+<init>()(io.github.grandckay.syntax.App#<init>()VV
+main([Ljava/lang/String;)9io.github.grandckay.syntax.App#main([Ljava/lang/String;)V
+*io.github.grandckay.syntax.calc.Calculatorjava.lang.Object@
+<init>()4io.github.grandckay.syntax.calc.Calculator#<init>()Vn
+calculate(IILjava/lang/String;)Kio.github.grandckay.syntax.calc.Calculator#calculate(IILjava/lang/String;)D…
+)io.github.grandckay.syntax.calc.Remainderjava.lang.ObjectC
+
+<init>(II)5io.github.grandckay.syntax.calc.Remainder#<init>(II)VE
+calculate()6io.github.grandckay.syntax.calc.Remainder#calculate()I

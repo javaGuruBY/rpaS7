@@ -1,0 +1,7 @@
+organization=javaguruby
+projectKey=javaGuruBY_java-free-stream-5
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.19301
+dashboardUrl=https://sonarcloud.io/dashboard?id=javaGuruBY_java-free-stream-5
+ceTaskId=AXjaW_xz_a81Iz_wO2K-
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXjaW_xz_a81Iz_wO2K-
