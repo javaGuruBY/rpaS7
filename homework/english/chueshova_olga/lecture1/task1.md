@@ -41,10 +41,10 @@ SECTION 2. SPEAKING PRACTICE
 
 1 What's your name? - My Name is Olga.
 2 Where do you live? - I live in Gomel, Belarus.
-3 What do you do? - I am not working now. I worked in a bank as a manager. But two mounths ego I have left my job. And now I am looking for new job and trying to understanding what I really want to do.
+3 What do you do? - I work in a bank.
 4 What do you like doing in your free time? - When I have free time I read books, listen music, spend time with my family, do sport...
-5 Why would you like to be a programmer? - I would like to be a programmer, because I want to have a good wage for my work. 
-6 What are you working on in the programming course at the moment? - At the moment I am doing my homework by English.  
+5 Why would you like to be a programmer? - I would like to be a programmer, because I think it is interesting. 
+6 What are you working on in the programming course at the moment? - At the moment we are working on chat bot development.
 7 Did you learn English before? - I have been starting to learn English some mounths ego. I stady English independently. I have some smartphone apps. Recently I have begun to read a book in English, but I read it for now with help a dictionary.
-8 Would you like to boost your English? - Yes, of course I want to boost my English, especially spieking English and listening English.
+8 Would you like to boost your English? - Yes, of course I want to boost my English, especially spieking and listening.
 9 What is the hardest thing about learning English? - Listenin English.
