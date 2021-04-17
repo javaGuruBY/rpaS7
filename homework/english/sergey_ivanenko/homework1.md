@@ -2,7 +2,7 @@
 
 1. He usually has breakfast at 6 a.m.
 
-2. Anyone who (smokes / is smoking) 20 cigarettes a day can expect to have health problems.
+2. Anyone who smokes 20 cigarettes a day can expect to have health problems.
 
 3. She doesn't like cooking, but today she a baking a pie.
 
