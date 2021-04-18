@@ -15,6 +15,7 @@ public class RandomGeneratorDemo {
         int secondRandom = (int) (Math.random() * Integer.MAX_VALUE);
         System.out.println("Random number3 = " + secondRandom);
 
+        sum += secondRandom;
         System.out.println("Sum of random numbers = " + sum);
     }
 }
