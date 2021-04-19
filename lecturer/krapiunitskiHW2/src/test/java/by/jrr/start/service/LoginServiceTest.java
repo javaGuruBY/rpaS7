@@ -9,6 +9,7 @@ import org.junit.Test;
 public class LoginServiceTest {
     LoginService loginService;
     User user;
+    User blockedUser;
     String positiveUserInput = "password";
     String negativeUserInput = "wrong";
 
@@ -18,6 +19,10 @@ public class LoginServiceTest {
         this.user = getUser();
         Assert.assertEquals(3, user.getLoginAttempts());
         Assert.assertFalse(user.isBlocked());
+
+        this.blockedUser = getBlockedUser();
+        Assert.assertEquals(0, blockedUser.getLoginAttempts());
+        Assert.assertTrue(blockedUser.isBlocked());
     }
 
     @Test
@@ -25,7 +30,6 @@ public class LoginServiceTest {
         boolean actualResult = loginService.checkUserPassword(user,positiveUserInput);
         Assert.assertTrue(actualResult);
     }
-
 
     @Test
     public void checkUserPassword_negative(){
@@ -72,9 +76,22 @@ public class LoginServiceTest {
         Assert.assertTrue(user.isBlocked());
     }
 
+    @Test
+    public void BlockedUserLogin_ShouldReturnFalse(){
+        boolean actualResult = loginService.login(blockedUser,positiveUserInput);
+        Assert.assertFalse(actualResult);
+    }
+
     private User getUser() {
         User user = new User();
         user.setPassword("password");
+        return user;
+    }
+    private User getBlockedUser() {
+        User user = new User();
+        user.setPassword("password");
+        user.setLoginAttempts(0);
+        user.setBlocked(true);
         return user;
     }
 }
