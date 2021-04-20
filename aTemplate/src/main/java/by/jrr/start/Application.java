@@ -1,6 +1,7 @@
 package by.jrr.start;
 
-import by.jrr.start.service.CalculatorService;
+import by.jrr.start.rysard_poplavskij.service.CalculatorService;
+
 
 public class Application {
 

@@ -1,4 +1,4 @@
-package by.jrr.start.service;
+package by.jrr.start.rysard_poplavskij.service;
 
 public class CalculatorService {
     public int sum(int a, int b) {

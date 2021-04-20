@@ -1,6 +1,7 @@
 package rysard_poplavskij;
 
-import by.jrr.start.service.CalculatorService;
+
+import by.jrr.start.rysard_poplavskij.service.CalculatorService;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
