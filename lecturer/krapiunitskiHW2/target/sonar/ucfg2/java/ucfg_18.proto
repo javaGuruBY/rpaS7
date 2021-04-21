@@ -1,0 +1,119 @@
+
+2by.jrr.start.bean.User#equals(Ljava/lang/Object;)Z
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java9 9("startingBlock*�
+2�
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java=| =(��
+�
+�
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java=� =(�
+%5java.lang.String"__id*%*#
+by.jrr.start.bean.User"
+login�
+�
+�
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java=� =(�
+%6java.lang.String"__id*+*)
+
+userby.jrr.start.bean.User"
+login�
+�
+�
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java=| =(�
+%7boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*"
+java.util.Objects*
+
+%5java.lang.String*
+
+%6java.lang.String*
+1*�
+startingBlock
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java9 9(#�
+�
+
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java8 8(
+%8"
+__annotate*
+java.lang.Override*
+
+ojava.lang.Object�
+�
+
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java9! 9("
+ojava.lang.Object"__annotation*
+
+%8*
+
+8
+9
+11*�
+4
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java=Q =(X�
+�
+
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java=` =(h
+%2java.lang.String"__id*(*&
+by.jrr.start.bean.User"
+
+password�
+�
+
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java=j =(w
+%3java.lang.String"__id*.*,
+
+userby.jrr.start.bean.User"
+
+password�
+�
+
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java=Q =(x
+%4boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*"
+java.util.Objects*
+
+%2java.lang.String*
+
+%3java.lang.String*
+2
+1*�
+7
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java< <(�
+�
+
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java< <(
+userby.jrr.start.bean.User"__id*
+
+ojava.lang.Object*	
+2
+4
+1*�
+8
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java;< ;(A"�
+
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java;5 ;(B
+""*�
+9
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java; ;(!��
+
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java; ;(#
+%0java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*
+by.jrr.start.bean.User2
+getClass()��
+
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java;' ;(3
+%1java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*
+
+ojava.lang.Object2
+getClass()*
+7
+8*�
+11
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java: :(""�
+
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java: :(#
+""*�
+1�
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java= =(�"�
+�
+uD:/Документы/IQ/Projects/Java/Guru/GitHub/lecturer/krapiunitskiHW2/src/main/java/by/jrr/start/bean/User.java= =(�
+"":
+ojava.lang.ObjectB
+by.jrr.start.bean.User
