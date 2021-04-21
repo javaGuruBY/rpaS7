@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>by.jrr</groupId>
+    <groupId>io.github.sergey_ivanenko</groupId>
     <artifactId>task1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -73,5 +73,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
