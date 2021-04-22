@@ -68,9 +68,9 @@ public class User {
     public String toString() {
         return "User\n" +
                 "login = " + login + '\n' +
-                "password= " + password + '\n' +
-                "loginAttempts= " + loginAttempts + '\n' +
-                "isBlocked=" + isBlocked + '\n';
+                "password = " + password + '\n' +
+                "loginAttempts = " + loginAttempts + '\n' +
+                "isBlocked =" + isBlocked + '\n';
     }
 }
 
