@@ -1,0 +1,38 @@
+{
+  "update_id": 164114787,
+  "message": {
+    "chatId": 402994964,
+    "command": true,
+    "groupMessage": false,
+    "channelMessage": false,
+    "reply": false,
+    "userMessage": true,
+    "superGroupMessage": false,
+    "message_id": 2,
+    "from": {
+      "bot": false,
+      "id": 402994964,
+      "first_name": "Neznámý",
+      "is_bot": false,
+      "language_code": "ru"
+    },
+    "date": 1618940706,
+    "chat": {
+      "groupChat": false,
+      "channelChat": false,
+      "superGroupChat": false,
+      "userChat": true,
+      "id": 402994964,
+      "type": "private",
+      "first_name": "Neznámý"
+    },
+    "text": "/help",
+    "entities": [
+      {
+        "type": "bot_command",
+        "offset": 0,
+        "length": 6
+      }
+    ]
+  }
+}
