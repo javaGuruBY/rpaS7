@@ -4,8 +4,7 @@ import by.jrr.start.bean.User;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class LoginServiceTest {
 
@@ -16,6 +15,7 @@ public class LoginServiceTest {
     String wrongInput = "wrong";
 
     boolean actualResult;
+    int actualAttempts;
 
     @Before
     public void setUp() {
@@ -59,5 +59,35 @@ public class LoginServiceTest {
         assertFalse(actualResult);
     }
 
+    @Test
+    public void afterWrongPassword_ShouldReduceAttempts() {
+        loginService.login(user, correctLogin, wrongInput);
+        actualAttempts = user.getLoginAttempts();
+        assertEquals(2, actualAttempts);
+    }
+
+    @Test
+    public void after2WrongPasswords_ShouldReduceAttemptsTo1() {
+        loginService.login(user, correctLogin, wrongInput);
+        loginService.login(user, correctLogin, wrongInput);
+        actualAttempts = user.getLoginAttempts();
+        assertEquals(1, actualAttempts);
+    }
+
+    @Test
+    public void after3WrongPassword_ShouldReduceAttemptsTo0() {
+        loginService.login(user, correctLogin, wrongInput);
+        loginService.login(user, correctLogin, wrongInput);
+        loginService.login(user, correctLogin, wrongInput);
+        actualAttempts = user.getLoginAttempts();
+        assertEquals(0, actualAttempts);
+    }
+
+    @Test
+    public void userIsBlocked_AfterAttemptsExceed() {
+        user.setLoginAttempts(1);
+        loginService.login(user, correctLogin, wrongInput);
+        assertTrue(user.isBlocked());
+    }
 
 }
