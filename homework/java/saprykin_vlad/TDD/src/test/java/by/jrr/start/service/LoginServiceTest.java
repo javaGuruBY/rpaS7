@@ -90,4 +90,11 @@ public class LoginServiceTest {
         assertTrue(user.isBlocked());
     }
 
+    @Test
+    public void userCanNotEnterIfBlocked(){
+        user.setBlocked(true);
+        actualResult = loginService.login(user, correctLogin, correctPassword);
+        assertFalse(actualResult);
+    }
+
 }
