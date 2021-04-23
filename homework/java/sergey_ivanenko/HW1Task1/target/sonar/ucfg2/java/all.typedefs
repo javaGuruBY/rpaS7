@@ -16,10 +16,10 @@ getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
 notifyAll()java.lang.Object#notifyAll()V"
 wait()java.lang.Object#wait()V*
 
-hashCode()java.lang.Object#hashCode()IÕ
-%io.github.sergey_ivanenko.Applicationjava.lang.Object;
-<init>()/io.github.sergey_ivanenko.Application#<init>()V]
-main([Ljava/lang/String;)@io.github.sergey_ivanenko.Application#main([Ljava/lang/String;)V(
+hashCode()java.lang.Object#hashCode()I®
+by.jrr.start.Applicationjava.lang.Object.
+<init>()"by.jrr.start.Application#<init>()VP
+main([Ljava/lang/String;)3by.jrr.start.Application#main([Ljava/lang/String;)V(
 java.lang.Appendablejava.lang.Object+
 java.lang.AutoCloseablejava.lang.Object>
 java.io.Closeablejava.lang.Objectjava.lang.AutoCloseable%
