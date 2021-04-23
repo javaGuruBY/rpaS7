@@ -5,13 +5,14 @@ import by.jrr.start.bean.User;
 public class LoginService {
 
     public boolean login(User user, String login, String password) {
-        if (!user.isBlocked()) {
+        if (!user.isBlocked() && user.getLogin().equals(login)) {
             if (!chekUserPassword(user, password)) {
                 reduceLoginAttempts(user);
                 blockUserWith0Attempts(user);
                 return false;
             }
-            return user.getLogin().equals(login);
+            user.setLoginAttempts(3);
+            return true;
         }
         return false;
     }

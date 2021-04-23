@@ -67,6 +67,13 @@ public class LoginServiceTest {
     }
 
     @Test
+    public void afterWrongLogin_ShouldNotReduceAttempts() {
+        loginService.login(user, wrongInput, wrongInput);
+        actualAttempts = user.getLoginAttempts();
+        assertEquals(3, actualAttempts);
+    }
+
+    @Test
     public void after2WrongPasswords_ShouldReduceAttemptsTo1() {
         loginService.login(user, correctLogin, wrongInput);
         loginService.login(user, correctLogin, wrongInput);
@@ -95,6 +102,14 @@ public class LoginServiceTest {
         user.setBlocked(true);
         actualResult = loginService.login(user, correctLogin, correctPassword);
         assertFalse(actualResult);
+    }
+
+    @Test
+    public void recoverUserLoginAttemptsAfterCorrectInput(){
+        user.setLoginAttempts(1);
+        loginService.login(user, correctLogin, correctPassword);
+        actualAttempts = user.getLoginAttempts();
+        assertEquals(3, actualAttempts);
     }
 
 }
