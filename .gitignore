@@ -1,3 +1,4 @@
 .idea
 **/target/*
 **/*.iml
+/homework/java/saprykin_vlad/SpringBoot/VladtgBot/src/main/resources/application.properties
