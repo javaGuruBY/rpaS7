@@ -1,4 +1,4 @@
-package by.jrr.VladtgBot.service;
+package by.jrr.VladtgBot;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

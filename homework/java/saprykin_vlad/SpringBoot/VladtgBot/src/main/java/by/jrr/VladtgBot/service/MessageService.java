@@ -43,6 +43,8 @@ public class MessageService {
                     return BotCommand.EXITQ;
                 } else if (msgText.startsWith(BotCommand.SHOWALL.getCommand())) {
                     return BotCommand.SHOWALL;
+                } else if (msgText.startsWith(BotCommand.SHOWNASTOLKIBY.getCommand())) {
+                    return BotCommand.SHOWNASTOLKIBY;
                 }
             }
         }
