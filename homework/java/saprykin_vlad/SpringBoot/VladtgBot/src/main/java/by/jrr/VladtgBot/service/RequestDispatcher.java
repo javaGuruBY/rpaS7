@@ -22,6 +22,10 @@ public class RequestDispatcher {
     NoneProcessor noneProcessor;
     @Autowired
     ResultProcessor resultProcessor;
+    @Autowired
+    ExitqProcessor exitqProcessor;
+@Autowired
+    ShowALLProcessor showALLProcessor;
 
     public void dispatch(Update update) {
         switch (messageService.getCommand(update)) {
@@ -36,6 +40,12 @@ public class RequestDispatcher {
                 break;
             case RESULT:
                 messageService.sendMessage(update.getMessage(), resultProcessor.run());
+                break;
+            case EXITQ:
+                messageService.sendMessage(update.getMessage(), exitqProcessor.run());
+                break;
+            case SHOWALL:
+                messageService.sendMessage(update.getMessage(), showALLProcessor.run());
                 break;
             case NONE:
                 messageService.sendMessage(update.getMessage(), noneProcessor.run());

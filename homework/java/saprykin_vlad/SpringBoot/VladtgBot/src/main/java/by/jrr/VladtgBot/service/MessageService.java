@@ -41,6 +41,8 @@ public class MessageService {
                     return BotCommand.RESULT;
                 } else if (msgText.startsWith(BotCommand.EXITQ.getCommand())) {
                     return BotCommand.EXITQ;
+                } else if (msgText.startsWith(BotCommand.SHOWALL.getCommand())) {
+                    return BotCommand.SHOWALL;
                 }
             }
         }

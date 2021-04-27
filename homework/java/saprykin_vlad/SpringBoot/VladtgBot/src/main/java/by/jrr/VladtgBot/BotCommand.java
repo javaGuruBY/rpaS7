@@ -9,6 +9,7 @@ public enum BotCommand {
     QUESTIONNAIRE("/questionnaire"),
     RESULT("/result"),
     EXITQ("/exitq"),
+    SHOWALL("/showall"),
     NONE("/none");
 
     String command;
