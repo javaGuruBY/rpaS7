@@ -26,8 +26,7 @@ public class TelegramBot extends TelegramLongPollingBot {
     @Value("${bot.token}")
     private String botToken;
 
-    @Autowired(required = true)
-    ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+    static final ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
 
     public long getChatId() {
         return chatId;
@@ -43,8 +42,10 @@ public class TelegramBot extends TelegramLongPollingBot {
     RequestDispatcher requestDispatcher;
 
     @Autowired
-    ObjectMapper objectMapper;
+    MessageService messageService;
 
+    @Autowired
+    ObjectMapper objectMapper;
     @Override
     public void onUpdateReceived(Update update) {
         requestDispatcher.dispatch(update);
@@ -68,33 +69,73 @@ public class TelegramBot extends TelegramLongPollingBot {
     private String getMessage(String msg) {
         ArrayList<KeyboardRow> keyboard = new ArrayList<>();
         KeyboardRow keyboardFirstRow = new KeyboardRow();
+        KeyboardRow keyboardSecondRow = new KeyboardRow();
 
         replyKeyboardMarkup.setSelective(true);
         replyKeyboardMarkup.setResizeKeyboard(true);
         replyKeyboardMarkup.setOneTimeKeyboard(false);
 
         if (msg.equals("/start")){
+            // requesttdispatcher
             keyboard.clear();
+            keyboardFirstRow.clear();
             keyboardFirstRow.add("Анкета");
             keyboard.add(keyboardFirstRow);
             replyKeyboardMarkup.setKeyboard(keyboard);
-            return "Выбрать...";
+            return "Нажми 'Анкета'";
         }
-        if (msg.equals("Анкета")){
+        if (msg.equals("Анкета")) {
+            //requesttdispatcher
             keyboard.clear();
+            keyboardFirstRow.clear();
+            keyboardFirstRow.add("Начать");
+            replyKeyboardMarkup.setKeyboard(keyboard);
+
+            return "Начнем?";
+        }
+        if (msg.equals("Начать")){
+            // Первый вопрос
+            keyboard.clear();
+            keyboardFirstRow.clear();
             keyboardFirstRow.add("Да");
             keyboardFirstRow.add("Нет");
             replyKeyboardMarkup.setKeyboard(keyboard);
-            return "Выбрать...";
+            return "Ваш выбор...";
             // переход ко 2 вопросу
         }
         if (msg.equals("Да") || msg.equals("Нет")){
+            // Второй вопрос
             keyboard.clear();
+            keyboardFirstRow.clear();
             keyboardFirstRow.add("В голове");
             keyboardFirstRow.add("В компании");
-            return "Выбрать...";
+            return "Ваш выбор...";
+            // переход к 3 вопросу
         }
-        return null;
+        if (msg.equals("В голове") || msg.equals("В компании")){
+            // Третий вопрос
+            keyboard.clear();
+            keyboardFirstRow.clear();
+            keyboardFirstRow.add("Да");
+            keyboardFirstRow.add("Нет");
+            return "Ваш выбор...";
+            // переход к 4 вопросу
+        }
+        if (msg.equals("Да") || msg.equals("Нет")){
+            // Четвертый вопрос
+            keyboard.clear();
+            keyboardFirstRow.clear();
+            keyboardSecondRow.clear();
+            keyboardFirstRow.add("Уступчивый");
+            keyboardFirstRow.add("Агрессивный");
+            keyboardSecondRow.add("Общительный");
+            keyboardSecondRow.add("Расчетливый");
+            return "Ваш выбор...";
+
+            // Результат
+        }
+
+        return msg;
     }
 
     private void saveJson(Update update) {

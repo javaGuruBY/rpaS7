@@ -1,10 +1,8 @@
 package by.jrr.VladtgBot.service;
 
-import by.jrr.VladtgBot.BotCommand;
 import by.jrr.VladtgBot.processors.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 
@@ -24,7 +22,7 @@ public class RequestDispatcher {
     ResultProcessor resultProcessor;
     @Autowired
     ExitqProcessor exitqProcessor;
-@Autowired
+    @Autowired
     ShowALLProcessor showALLProcessor;
 
     public void dispatch(Update update) {
