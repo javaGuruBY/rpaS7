@@ -1,0 +1,35 @@
+{
+  "update_id": 603290915,
+  "message": {
+    "command": false,
+    "channelMessage": false,
+    "reply": false,
+    "groupMessage": false,
+    "userMessage": true,
+    "superGroupMessage": false,
+    "chatId": 447069249,
+    "message_id": 35,
+    "from": {
+      "bot": false,
+      "id": 447069249,
+      "first_name": "Vlad",
+      "is_bot": false,
+      "last_name": "Saprykin",
+      "username": "PrinceProgram",
+      "language_code": "ru"
+    },
+    "date": 1619519992,
+    "chat": {
+      "superGroupChat": false,
+      "channelChat": false,
+      "userChat": true,
+      "groupChat": false,
+      "id": 447069249,
+      "type": "private",
+      "first_name": "Vlad",
+      "last_name": "Saprykin",
+      "username": "PrinceProgram"
+    },
+    "text": "/start"
+  }
+}
