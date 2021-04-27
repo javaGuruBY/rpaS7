@@ -45,6 +45,9 @@ public class TelegramBot extends TelegramLongPollingBot {
     @Autowired
     ObjectMapper objectMapper;
 
+    @Autowired(required = true)
+    KeyboardRow keyboardFirstRow = new KeyboardRow();
+
     @Override
     public void onUpdateReceived(Update update) {
         requestDispatcher.dispatch(update);
@@ -67,7 +70,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     private String getMessage(String msg) {
         ArrayList<KeyboardRow> keyboard = new ArrayList<>();
-        KeyboardRow keyboardFirstRow = new KeyboardRow();
+
 
         replyKeyboardMarkup.setSelective(true);
         replyKeyboardMarkup.setResizeKeyboard(true);
