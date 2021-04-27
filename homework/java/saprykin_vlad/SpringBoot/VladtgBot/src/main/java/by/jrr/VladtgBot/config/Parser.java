@@ -39,17 +39,17 @@ public class Parser {
 
     public static void main(String[] args) throws Exception {
         System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2");
-        int pageNumbers = 3;
+        int pageNumbers = 1;
         FileWriter csvWriter = new FileWriter("src/main/resources/nastolki.csv");
 
         csvWriter.append("title");
-        csvWriter.append(",");
+        csvWriter.append(";");
         csvWriter.append("price");
-        csvWriter.append(",");
+        csvWriter.append(";");
         csvWriter.append("age");
-        csvWriter.append(",");
+        csvWriter.append(";");
         csvWriter.append("quantity");
-        csvWriter.append(",");
+        csvWriter.append(";");
         csvWriter.append("link");
         csvWriter.append("\n");
 
@@ -85,13 +85,13 @@ public class Parser {
                 System.out.println(gamersQuantity);
 
                 csvWriter.append(gameTitle);
-                csvWriter.append(",");
+                csvWriter.append(";");
                 csvWriter.append(gamePrice);
-                csvWriter.append(",");
+                csvWriter.append(";");
                 csvWriter.append(gameAge);
-                csvWriter.append(",");
+                csvWriter.append(";");
                 csvWriter.append(gamersQuantity);
-                csvWriter.append(",");
+                csvWriter.append(";");
                 csvWriter.append(gameLink);
                 csvWriter.append("\n");
 

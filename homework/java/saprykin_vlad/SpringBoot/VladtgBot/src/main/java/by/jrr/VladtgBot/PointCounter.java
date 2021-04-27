@@ -7,13 +7,9 @@ import java.util.Objects;
 
 @Component("PointCounter")
 public class PointCounter {
-    @Qualifier("familyPoints")
     int familyPoints;
-    @Qualifier("warPoints")
     int warPoints;
-    @Qualifier("partyPoints")
     int partyPoints;
-    @Qualifier("economyPoints")
     int economyPoints;
 
     public PointCounter() {
@@ -80,7 +76,7 @@ public class PointCounter {
                 "\neconomyPoints = " + economyPoints;
     }
 
-    public String chooseGame(PointCounter chooser) {
+    public String chooseGame() {
         StringBuilder message = new StringBuilder();
         message.append("Вам подходит жанр ");
         if (familyPoints >= warPoints && familyPoints >= partyPoints && familyPoints >= economyPoints) {
