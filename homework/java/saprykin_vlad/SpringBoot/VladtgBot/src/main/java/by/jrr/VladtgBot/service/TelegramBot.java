@@ -24,21 +24,14 @@ public class TelegramBot extends TelegramLongPollingBot {
     private String botToken;
 
     @Autowired
-    MessageService messageService;
+    RequestDispatcher requestDispatcher;
 
     @Autowired
     ObjectMapper objectMapper;
 
-
-
     @Override
     public void onUpdateReceived(Update update) {
-        SendMessage sendMessage = messageService.onUpdateReceived(update);
-        try {
-            execute(sendMessage);
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
+        requestDispatcher.dispatch(update);
         saveJson(update);
     }
 

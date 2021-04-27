@@ -17,7 +17,7 @@ import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MessageServiceTest extends VladtgBotApplicationTests {
-
+/*
     @Autowired
     TelegramBot telegramBot;
     @Autowired
@@ -66,4 +66,5 @@ class MessageServiceTest extends VladtgBotApplicationTests {
         message.setText(text);
         return message;
     }
+ */
 }
