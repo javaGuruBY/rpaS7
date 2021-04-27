@@ -26,7 +26,7 @@ public class TelegramBot extends TelegramLongPollingBot {
     @Value("${bot.token}")
     private String botToken;
 
-    @Autowired
+    @Autowired(required = true)
     ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
 
     public long getChatId() {
@@ -44,9 +44,6 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     @Autowired
     ObjectMapper objectMapper;
-
-    @Autowired(required = true)
-    KeyboardRow keyboardFirstRow = new KeyboardRow();
 
     @Override
     public void onUpdateReceived(Update update) {
@@ -70,7 +67,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     private String getMessage(String msg) {
         ArrayList<KeyboardRow> keyboard = new ArrayList<>();
-
+        KeyboardRow keyboardFirstRow = new KeyboardRow();
 
         replyKeyboardMarkup.setSelective(true);
         replyKeyboardMarkup.setResizeKeyboard(true);
