@@ -1,5 +1,6 @@
 package by.jrr.VladtgBot;
 
+import by.jrr.VladtgBot.config.CsvFileToGameLinks;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
@@ -82,9 +83,10 @@ public class PointCounter {
         if (familyPoints >= warPoints && familyPoints >= partyPoints && familyPoints >= economyPoints) {
             message.append(" семейных игр");
         } else if (warPoints >= partyPoints && warPoints >= economyPoints) {
-            message.append(" вар геймов");
+            message.append(" вар геймов" + new CsvFileToGameLinks().getWarGames());
         } else if (partyPoints >= economyPoints) {
-            message.append(" игр для вечеринки");
+            message.append(" игр для вечеринки" + new CsvFileToGameLinks().getPartyGames());
+
         } else {
             message.append(" экономических игр");
         }
