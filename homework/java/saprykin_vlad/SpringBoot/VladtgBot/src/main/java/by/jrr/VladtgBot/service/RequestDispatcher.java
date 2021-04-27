@@ -1,10 +1,7 @@
 package by.jrr.VladtgBot.service;
 
 import by.jrr.VladtgBot.BotCommand;
-import by.jrr.VladtgBot.processors.HelpProcessor;
-import by.jrr.VladtgBot.processors.NoneProcessor;
-import by.jrr.VladtgBot.processors.QuestionnaireProcessor;
-import by.jrr.VladtgBot.processors.StartProcessor;
+import by.jrr.VladtgBot.processors.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.objects.Message;
@@ -23,6 +20,8 @@ public class RequestDispatcher {
     StartProcessor startProcessor;
     @Autowired
     NoneProcessor noneProcessor;
+    @Autowired
+    ResultProcessor resultProcessor;
 
     public void dispatch(Update update) {
         switch (messageService.getCommand(update)) {
@@ -34,6 +33,9 @@ public class RequestDispatcher {
                 break;
             case QUESTIONNAIRE:
                 messageService.sendMessage(update.getMessage(), questionnaireProcessor.run());
+                break;
+            case RESULT:
+                messageService.sendMessage(update.getMessage(), resultProcessor.run());
                 break;
             case NONE:
                 messageService.sendMessage(update.getMessage(), noneProcessor.run());
