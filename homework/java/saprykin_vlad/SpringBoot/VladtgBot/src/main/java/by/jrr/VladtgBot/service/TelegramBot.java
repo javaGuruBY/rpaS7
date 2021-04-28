@@ -40,24 +40,11 @@ public class TelegramBot extends TelegramLongPollingBot {
         requestDispatcher.dispatch(update);
         saveJson(update);
 
-        sendMsg(update);
+        keyboardService.sendMsg(update);
 
     }
 
-    private void sendMsg(Update update) {
-        SendMessage sendMessage = new SendMessage().setChatId(update.getMessage().getChatId());
-        Long chatId = update.getMessage().getChatId();
 
-        String text = update.getMessage().getText();
-        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-
-        try {
-            sendMessage.setText(keyboardService.getMessage(text));
-            execute(sendMessage);
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
-    }
 
 
     private void saveJson(Update update) {

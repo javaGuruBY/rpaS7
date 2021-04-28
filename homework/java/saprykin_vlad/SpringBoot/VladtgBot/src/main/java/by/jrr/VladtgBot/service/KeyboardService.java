@@ -1,12 +1,13 @@
 package by.jrr.VladtgBot.service;
 
-import org.springframework.stereotype.Service;
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.util.ArrayList;
 
-@Service
 public class KeyboardService {
 
     static final ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
@@ -20,6 +21,21 @@ public class KeyboardService {
     }
 
     private long chatId;
+
+    private void sendMsg(Update update) {
+        SendMessage sendMessage = new SendMessage().setChatId(update.getMessage().getChatId());
+        Long chatId = update.getMessage().getChatId();
+
+        String text = update.getMessage().getText();
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        try {
+            sendMessage.setText(getMessage(text));
+            execute(sendMessage);
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
+        }
+    }
 
     String getMessage(String msg) {
         ArrayList<KeyboardRow> keyboard = new ArrayList<>();
