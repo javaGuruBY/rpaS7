@@ -1,4 +1,4 @@
-package by.jrr.VladtgBot.config;
+package by.jrr.util;
 
 import by.jrr.VladtgBot.bean.ProductNastolkiBy;
 import com.opencsv.CSVReader;

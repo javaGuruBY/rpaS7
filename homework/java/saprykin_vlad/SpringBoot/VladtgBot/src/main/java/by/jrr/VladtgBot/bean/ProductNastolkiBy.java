@@ -7,13 +7,9 @@ public class ProductNastolkiBy implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String title;
-
     private String price;
-
     private String age;
-
     private String quantity;
-
     private String link;
 
     public ProductNastolkiBy() {

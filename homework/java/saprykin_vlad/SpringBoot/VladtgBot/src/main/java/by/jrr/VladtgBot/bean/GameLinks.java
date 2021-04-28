@@ -4,9 +4,7 @@ import java.util.Objects;
 
 public class GameLinks {
     private String title;
-
     private String link;
-
     private String videoLink;
 
     public GameLinks() {
@@ -58,7 +56,7 @@ public class GameLinks {
     @Override
     public String toString() {
         return "Ваша игра" +
-                "\nНазвание " + title  +
+                "\nНазвание " + title +
                 "\nОбзор " + link +
                 "\nВидео " + videoLink;
     }

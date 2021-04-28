@@ -1,4 +1,4 @@
-package by.jrr.VladtgBot.config;
+package by.jrr.util;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -100,5 +100,4 @@ public class Parser {
         csvWriter.flush();
         csvWriter.close();
     }
-
 }

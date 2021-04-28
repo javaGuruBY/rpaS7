@@ -1,6 +1,6 @@
 package by.jrr.VladtgBot.service;
 
-import by.jrr.VladtgBot.BotCommand;
+import by.jrr.VladtgBot.constants.BotCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -44,6 +44,9 @@ public class MessageService {
                 } else if (msgText.startsWith(BotCommand.SHOWALL.getCommand())) {
                     return BotCommand.SHOWALL;
                 } else if (msgText.startsWith(BotCommand.SHOWNASTOLKIBY.getCommand())) {
+                    BotCommand[] allCommands = BotCommand.values();
+                    allCommands[0].getCommand();
+
                     return BotCommand.SHOWNASTOLKIBY;
                 }
             }
