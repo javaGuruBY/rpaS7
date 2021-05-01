@@ -25,13 +25,13 @@ won't for predictions
 
 3 I'm sure the theatre will crowded tonight.
 
-4 When will the film to-end?
+4 When will the film end?
 
 5 Jenny won't to find a new job so fast.
 
 6 The new security system will protect our customers better.
 
-7 When will change to the new security system?
+7 When will we change to the new security system?
 
 8 Will the new system to have a firewall?
 
@@ -40,9 +40,9 @@ won't for predictions
 1.3 Complete the sentences with the construction be going to
 
 
-1 I'm going to lean to write programs.
+1 I'm going to learn to write programs.
 
-2 Michael going to late for the meeting.
+2 Michael is going to be late for the meeting.
 
 3 What are you going to do tonight?
 
@@ -58,7 +58,7 @@ won't for predictions
 
 
 1. What are Mike's plans for the summer?
-— Well, first he will stay with a friend in Italy, and then he is going to travel round France and Spain.
+— Well, first he’s going to stay with a friend in Italy, and then he is going to travel round France and Spain.
 
 2. — Here's my phone number. — Thanks. I will call you tomorrow morning.
 
@@ -67,4 +67,4 @@ won't for predictions
 
 4. — Sorry, I'm not going out tonight.
 — What are you going to do, then?
-— I will stay at home. I have to study.
+— I’m going to stay at home. I have to study.
